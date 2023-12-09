@@ -1,25 +1,27 @@
 <!DOCTYPE html>
+<?php
+    $nome = $_POST["nome"]; 
+    $cognome = $_POST["cognome"]; 
+    $sesso = $_POST["sesso"];
+
+    setcookie("nome", $nome, time()+60);
+    setcookie("cognome", $cognome, time()+60);
+    setcookie("tipo_viaggio", $tipo_viaggio, time()+60);
+ ?>
+
 <html>
     <head>
         <meta charset="utf-8">
-        <title>dettaglio prenotazione</title>
+        <title>Saluto</title>
     </head>
     <body> 
-        <h1>prenotazione</h1>
+        <h1>Saluto</h1>
         <?php
-            session_start();
-            $nome = $_POST["nome"]; //_POST è un array associativo predefinito in PHP
-            $cognome = $_POST["cognome"]; 
-            $tipo_viaggio = $_POST["tipo_viaggio"];
 
-            $_SESSION["nome"] = $nome; //session è un'array associativo
-            $_SESSION["cognome"] = $cognome;
-            $_SESSION["tipo_viaggio"] = $tipo_viaggio;
-
-        if($tipo_viaggio == "Lavoro"){//Lavoro
-            print("Il tuo viaggio è per: $tipo_viaggio"); 
-        } else {
-            print(""Il tuo viaggio è per: $tipo_viaggio");
+        if($tipo_viaggio == "L"){//lavoro
+            print("Benvenuto $nome $cognome"); 
+        } else { //vacanza
+            print("Benvenuta $nome $cognome");
         }
         
         ?>
