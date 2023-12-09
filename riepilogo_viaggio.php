@@ -14,7 +14,7 @@
             $destinazione = $_POST["destinazione"]; 
         
 
-            print("Buongiorno $nome $cognome siamo lieti di comunicatrti che la tua destinazione è : $destinazione");
+            print("Buongiorno $nome $cognome siamo lieti di comunicarti che la tua destinazione è : $destinazione");
 
            
          ?>
