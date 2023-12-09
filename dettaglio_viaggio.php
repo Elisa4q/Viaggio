@@ -16,9 +16,9 @@
             $_SESSION["cognome"] = $cognome;
             $_SESSION["tipo_viaggio"] = $tipo_viaggio;
 
-        if($tipo_viaggio == "Lavoro"){//Lavoro
+        if($tipo_viaggio == "L"){//Lavoro
             print("Il tuo viaggio è per: $tipo_viaggio"); 
-        } else {
+        } else { //Vacanza
             print(""Il tuo viaggio è per: $tipo_viaggio");
         }
         
