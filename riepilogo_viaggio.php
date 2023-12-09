@@ -9,8 +9,8 @@
         <?php
             session_start();
 
-            $cognome = $_SESSION["cognome"];
-            $nome = $_SESSION["nome"];
+            $cognome = $_COOKIE["cognome"];
+            $nome = $_COOKIE["nome"];
             $destinazione = $_POST["destinazione"]; 
         
 
