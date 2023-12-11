@@ -31,7 +31,6 @@
                 <option value = "Roma">Roma</option>
                 <option value = "Tokyo">Tokyo</option>
                 <option value = "Londra">Londra</option>
-                <option value = "New York">New York</option>
                 <option value = "Francia">Francia</option>
                 <option value = "Svizzera">Svizzera</option>
                 <option value = "Parigi">Parigi</option>
