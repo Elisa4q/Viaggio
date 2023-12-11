@@ -12,6 +12,7 @@
             $cognome = $_SESSION["cognome"];
             $nome = $_SESSION["nome"];
             $destinazione = $_POST["destinazione"]; 
+            
         
 
             print("Buongiorno $nome $cognome siamo lieti di comunicarti che la tua destinazione è : $destinazione");
