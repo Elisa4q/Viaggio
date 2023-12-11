@@ -8,20 +8,20 @@
         <h1>prenotazione</h1>
         <?php
             session_start();
-            $nome = $_POST["nome"]; //_POST è un array associativo predefinito in PHP
-            $cognome = $_POST["cognome"]; 
-            $tipo_viaggio = $_POST["tipo_viaggio"];
+            $Nome = $_POST["Nome"]; //_POST è un array associativo predefinito in PHP
+            $Cognome = $_POST["Cognome"]; 
+            $Tipo_viaggio = $_POST["Tipo_viaggio"];
            
 
-            $_SESSION["nome"] = $nome; //session è un'array associativo
-            $_SESSION["cognome"] = $cognome;
-            $_SESSION["tipo_viaggio"] = $tipo_viaggio;
+            $_SESSION["Nome"] = $Nome; //session è un'array associativo
+            $_SESSION["Cognome"] = $Cognome;
+            $_SESSION["Tipo_viaggio"] = $Tipo_viaggio;
 
-        if($tipo_viaggio == "L"){//Lavoro
-            print("Il tuo viaggio è per: $tipo_viaggio"); 
+        if($Tipo_viaggio == "L"){//Lavoro
+            print("Il tuo viaggio è per: $Tipo_viaggio"); 
            
         } else { //Vacanza
-            print("Il tuo viaggio è per: $tipo_viaggio");
+            print("Il tuo viaggio è per: $Tipo_viaggio");
         }
 
         
@@ -50,6 +50,22 @@
                 <option value = "tra 2000 e 9000">tra 2000 e 9000</option>
                 <option value = "tra 900 e 300">tra 900 e 300</option>
                 <option value = "inferiore a 300">inferiore a 300</option>
+            
+            </select>
+
+
+            <form method = "post" action = "riepilogo_viaggio.php">
+             Scegli il hotel:  
+             <select name  = "hotel">
+                <option value = "5 stelle"> 5 stelle</option>
+                <option value = "4 stelle">4 stelle</option>
+                <option value = "3 stelle">3 stelle</option>
+                <option value = "2 stelle">2 stelle</option>
+                <option value = "1 stella">1 stella</option>
+                <option value = "b&b">b&b</option>
+                <option value = "Appartamento">Appartamento</option>
+
+                
                 
             </select>
             <input type = "submit">
