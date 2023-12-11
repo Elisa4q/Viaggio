@@ -13,8 +13,10 @@
             $nome = $_SESSION["nome"];
             $destinazione = $_POST["destinazione"]; 
             $budget = $_POST["budget"];
+            $hotel = $_POST["hotel"];
            
-        
+        print("Buongiorno $nome $cognome siamo lieti di informala che la sua destinazione è: $destinazione
+        lei ha un budget: $budget, l'hotel selezionato è un : $hotel");
          ?>
 
     
