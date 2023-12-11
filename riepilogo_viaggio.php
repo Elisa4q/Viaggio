@@ -12,11 +12,10 @@
             $cognome = $_SESSION["cognome"];
             $nome = $_SESSION["nome"];
             $destinazione = $_POST["destinazione"]; 
+            $budget = $_POST["budget"];
            
         
          ?>
-
-
 
     
     </body>
