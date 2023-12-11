@@ -14,9 +14,18 @@
             $destinazione = $_POST["destinazione"]; 
 
         
+            if($tipo_viaggio == "L") { //lavoro
+                print("Buongiorno $nome $cognome, siamo lieti di comunicarti che la vostra destinazione è: $destinazione
+                la vostra azienda è: $nome_azienda, hai un budget di: $budget, il vostro viaggio dura: $durata_viaggio 
+                infine la vostra destinazione è: $destinazione");
+            }
+             else { //vacanza
+                print("Buongiorno $nome $cognome, siamo lieti di comunicarti che la vostra destinazione è: $destinazione
+                sarete in $n_persone persone, l'alloggio da voi selezionato è $tipo_alloggio 
+                infine l'attività che avete selezinato è $tipo_attività");
+             }
 
-            print("Buongiorno $nome $cognome siamo lieti di comunicarti che la tua destinazione è : $destinazione");
-
+           
         
          ?>
 
