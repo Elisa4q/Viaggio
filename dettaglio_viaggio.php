@@ -2,7 +2,7 @@
 <?php
     $nome = $_POST["nome"]; 
     $cognome = $_POST["cognome"]; 
-    $sesso = $_POST["sesso"];
+    $tipo_viaggio = $_POST["tipo_viaggio"];
 
     setcookie("nome", $nome, time()+60);
     setcookie("cognome", $cognome, time()+60);
