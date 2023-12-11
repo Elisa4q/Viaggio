@@ -26,8 +26,7 @@
 
         
         ?>
-
-
+        
         <form method = "post" action = "riepilogo_viaggio.php">
             Scegli la tua destinazione:  
             <select name  = "destinazione">
