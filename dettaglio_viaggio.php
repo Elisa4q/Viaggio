@@ -22,9 +22,6 @@
            
         } else { //Vacanza
             print("Il tuo viaggio è per: $tipo_viaggio");
-            
-
-
         }
 
         
