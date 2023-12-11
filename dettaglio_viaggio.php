@@ -11,6 +11,7 @@
             $nome = $_POST["nome"]; //_POST è un array associativo predefinito in PHP
             $cognome = $_POST["cognome"]; 
             $tipo_viaggio = $_POST["tipo_viaggio"];
+           
 
             $_SESSION["nome"] = $nome; //session è un'array associativo
             $_SESSION["cognome"] = $cognome;
@@ -18,15 +19,7 @@
 
         if($tipo_viaggio == "L"){//Lavoro
             print("Il tuo viaggio è per: $tipo_viaggio"); 
-            
-            azienda: <input type = "text" value = "inserisci il nome dell'azienda" name = "azienda"> <br><br>
-            budget: <input type = "text" value = "inserisci il budget" name = "budget"> <br><br>
-            durata_viaggio: <input type = "text" value = "inserire la durata del vieggio" name = "durata_viaggio"> <br><br>
-            
-
-
-
-
+           
         } else { //Vacanza
             print("Il tuo viaggio è per: $tipo_viaggio");
             
