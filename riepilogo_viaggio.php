@@ -9,17 +9,15 @@
         <?php
             session_start();
 
-            $cognome = $_COOKIE["cognome"];
-            $nome = $_COOKIE["nome"];
+            $cognome = $_SESSION["cognome"];
+            $nome = $_SESSION["nome"];
             $destinazione = $_POST["destinazione"]; 
-        
-
-            print("Buongiorno $nome $cognome siamo lieti di comunicarti che la tua destinazione è : $destinazione");
-
+            $budget = $_POST["budget"];
+            $hotel = $_POST["hotel"];
            
+        print("Buongiorno $nome $cognome siamo lieti di informala che la sua destinazione è: $destinazione
+        lei ha un budget: $budget, l'hotel selezionato è un : $hotel");
          ?>
-
-
 
     
     </body>
