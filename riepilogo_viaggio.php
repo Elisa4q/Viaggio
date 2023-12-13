@@ -19,6 +19,6 @@
             $num_persone = $_SESSION["num_persone"];
             $tipo_alloggio = $_SESSION["tipo_alloggio"];
             $attività = $_SESSION["attività"];
-            
-        </body>
+            ?>
+    </body>
 </html>
