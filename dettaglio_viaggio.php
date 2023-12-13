@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
-    $nome = $_POST["nome"]; 
-    $cognome = $_POST["cognome"]; 
+    $Nome = $_POST["Nome"]; 
+    $Cognome = $_POST["Cognome"]; 
     $Tipo_viaggio = $_POST["Tipo_viaggio"];
     $destinazione = $_POST["destinazione"] ;
     $budget = $_POST["budget"];
@@ -12,8 +12,8 @@
     $tipo_alloggio = $_POST["tipo_alloggio"];
     $attività = $_SESSION["attività"];
 
-    setcookie("nome", $nome, time()+60);
-    setcookie("cognome", $cognome, time()+60);
+    setcookie("Nome", $Nome, time()+60);
+    setcookie("Cognome", $Cognome, time()+60);
     setcookie("Tipo_viaggio", $Tipo_viaggio, time()+60);
     setcookie("destinazione", $destinazione, time()+60);
     setcookie("budget", $budget, time()+60);
