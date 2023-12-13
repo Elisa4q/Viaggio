@@ -92,10 +92,7 @@
 
         ?>
 
-       
-
-            
-            <input type = "submit">
+      <input type = "submit">
     </form>
     </body>
 </html>
