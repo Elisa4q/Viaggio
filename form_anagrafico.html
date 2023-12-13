@@ -13,9 +13,21 @@
                 <input type = "radio" value = "Lavoro"  checked = "checked" name = "Tipo_viaggio"> Lavoro
                 <input type = "radio" value = "Vacanza" name = "Tipo_viaggio"> Vacanza
             <br><br>
-            Nome_Azienda: <input type = "text" value = "inserisci i nome dell'Azienda" name = "Azienda"> <br><br>
-                <input type = "submit">
+             
+                 <form method = "post" action = "riepilogo_viaggio.php">
+                    Scegli la tua destinazione:  
+                    <select name  = "destinazione">
+                        <option value = "Roma">Roma</option>
+                        <option value = "Tokyo">Tokyo</option>
+                        <option value = "Londra">Londra</option>
+                        <option value = "Francia">Francia</option>
+                        <option value = "Svizzera">Svizzera</option>
+                        <option value = "Parigi">Parigi</option>
+                        <option value = "Dubai">Dubai</option>
+                        
+                    </select>
+                    <input type = "submit">
         </form>
-        
+        </form>
     </body>
 </html>
