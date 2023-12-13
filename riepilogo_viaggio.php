@@ -19,11 +19,6 @@
             $num_persone = $_SESSION["num_persone"];
             $tipo_alloggio = $_SESSION["tipo_alloggio"];
             $attività = $_SESSION["attività"];
-           
-        print("Buongiorno $Nome $Cognome siamo lieti di informala che la sua destinazione è: $destinazione
-        lei ha un budget: $budget, l'hotel selezionato è un : $hotel");
-         ?>
-
-    
-    </body>
+            
+        </body>
 </html>
