@@ -3,11 +3,27 @@
     $nome = $_POST["nome"]; 
     $cognome = $_POST["cognome"]; 
     $Tipo_viaggio = $_POST["Tipo_viaggio"];
+    $destinazione = $_POST["destinazione"] ;
+    $budget = $_POST["budget"];
+    $hotel = $_POST["hotel"];
+    $azienda = $_POST["azienda"];
+    $durata_viaggio = $_POST["durata_viaggio"];
+    $num_persone = $_POST["num_persone"]; 
+    $tipo_alloggio = $_POST["tipo_alloggio"];
+    $attività = $_SESSION["attività"];
 
     setcookie("nome", $nome, time()+60);
     setcookie("cognome", $cognome, time()+60);
     setcookie("Tipo_viaggio", $Tipo_viaggio, time()+60);
- ?>
+    setcookie("destinazione", $destinazione, time()+60);
+    setcookie("budget", $budget, time()+60);
+    setcookie("hotel", $hotel, time()+60); 
+    setcookie("azienda", $azienda, time()+60); 
+    setcookie("durata_viaggio", $durata_viaggio, time()+60);
+    setcookie("num_persone", $num_persone, time()+60); 
+    setcookie("tipo_alloggio", $tipo_alloggio, time()+60); 
+    setcookie("attività", $attività, time()+60);
+?>
 
 <html>
     <head>
