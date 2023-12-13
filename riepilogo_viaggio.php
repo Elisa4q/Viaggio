@@ -11,6 +11,7 @@
 
             $Cognome = $_SESSION["Cognome"];
             $Nome = $_SESSION["Nome"];
+            $Tipo_viaggio = $_POST["Tipo_viaggio"];
             $destinazione = $_SESSION["destinazione"]; 
             $budget = $_SESSION["budget"];
             $hotel = $_SESSION["hotel"];
