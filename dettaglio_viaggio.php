@@ -18,7 +18,7 @@
         <h1>Saluto</h1>
         <?php
 
-        if($tipo_viaggio == "L"){//lavoro
+        if($Tipo_viaggio == "L"){//lavoro
             print("Benvenuto $nome $cognome"); 
         } else { //vacanza
             print("Benvenuta $nome $cognome");
