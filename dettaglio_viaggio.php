@@ -2,11 +2,11 @@
 <?php
     $nome = $_POST["nome"]; 
     $cognome = $_POST["cognome"]; 
-    $tipo_viaggio = $_POST["tipo_viaggio"];
+    $Tipo_viaggio = $_POST["Tipo_viaggio"];
 
     setcookie("nome", $nome, time()+60);
     setcookie("cognome", $cognome, time()+60);
-    setcookie("tipo_viaggio", $tipo_viaggio, time()+60);
+    setcookie("Tipo_viaggio", $Tipo_viaggio, time()+60);
  ?>
 
 <html>
