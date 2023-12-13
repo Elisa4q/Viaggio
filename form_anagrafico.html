@@ -5,18 +5,29 @@
         <title>form_anagrafico</title>
     </head>
     <body>
-        <p>inserisci i tuoi dati anagrafici:</p>
+        <p>Inserisci i tuoi dati anagrafici:</p>
         <form method = "post" action = "dettaglio_viaggio.php">
-            Nome: <input type = "text" value = "inserisci il tuo nome" name = "nome"> <br><br>
-            cognome: <input type = "text"  value = "inserisci il tuo nome" name = "cognome"> <br><br>
-            Tipo_viaggio:
-                <input type = "radio" value = "L"  checked = "checked" name = "Tipo_viaggio"> Lavoro
-                <input type = "radio" value = "V" name = "Tipo_viaggio"> Vacanza
+            Nome: <input type = "text" value = "inserisci il tuo Nome" name = "Nome"> <br><br>
+            Cognome: <input type = "text"  value = "inserisci il tuo Cognome" name = "Cognome"> <br><br>
+             Tipo_viaggio:
+                <input type = "radio" value = "Lavoro"  checked = "checked" name = "Tipo_viaggio"> Lavoro
+                <input type = "radio" value = "Vacanza" name = "Tipo_viaggio"> Vacanza
             <br><br>
-            Nome_Azienda: <input type = "text" value = "inserisci il nome dell'Azienda" name = "Azienda"> <br><br>
-            <input type = "submit">
-                <input type = "submit">
+             
+                 <form method = "post" action = "riepilogo_viaggio.php">
+                    Scegli la tua destinazione:  
+                    <select name  = "destinazione">
+                        <option value = "Roma">Roma</option>
+                        <option value = "Tokyo">Tokyo</option>
+                        <option value = "Londra">Londra</option>
+                        <option value = "Francia">Francia</option>
+                        <option value = "Svizzera">Svizzera</option>
+                        <option value = "Parigi">Parigi</option>
+                        <option value = "Dubai">Dubai</option>
+                        
+                    </select>
+                    <input type = "submit">
         </form>
-        
+        </form>
     </body>
 </html>
