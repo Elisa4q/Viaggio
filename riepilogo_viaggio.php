@@ -11,9 +11,14 @@
 
             $Cognome = $_SESSION["Cognome"];
             $Nome = $_SESSION["Nome"];
-            $destinazione = $_POST["destinazione"]; 
-            $budget = $_POST["budget"];
-            $hotel = $_POST["hotel"];
+            $destinazione = $_SESSION["destinazione"]; 
+            $budget = $_SESSION["budget"];
+            $hotel = $_SESSION["hotel"];
+            $azienda = $_SESSION["azienda"];
+            $durata_viaggio = $_SESSION["durata_viaggio"]; 
+            $num_persone = $_SESSION["num_persone"];
+            $tipo_alloggio = $_SESSION["tipo_alloggio"];
+            $attività = $_SESSION["attività"];
            
         print("Buongiorno $Nome $Cognome siamo lieti di informala che la sua destinazione è: $destinazione
         lei ha un budget: $budget, l'hotel selezionato è un : $hotel");
