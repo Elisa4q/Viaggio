@@ -38,6 +38,7 @@
                 <option value = "Svizzera">Svizzera</option>
                 <option value = "Parigi">Parigi</option>
                 <option value = "Dubai">Dubai</option>
+            </select>
 
                 <form method = "post" action = "riepilogo_viaggio.php">
              Scegli il budget:  
@@ -49,26 +50,21 @@
                 <option value = "tra 2000 e 9000">tra 2000 e 9000</option>
                 <option value = "tra 900 e 300">tra 900 e 300</option>
                 <option value = "inferiore a 300">inferiore a 300</option>
-            
             </select>
 
 
             <form method = "post" action = "riepilogo_viaggio.php">
              Scegli il hotel:  
              <select name  = "hotel">
-                <option value = "5 stelle"> 5 stelle</option>
+                <option value = "5 stelle">5 stelle</option>
                 <option value = "4 stelle">4 stelle</option>
                 <option value = "3 stelle">3 stelle</option>
                 <option value = "2 stelle">2 stelle</option>
                 <option value = "1 stella">1 stella</option>
                 <option value = "b&b">b&b</option>
                 <option value = "Appartamento">Appartamento</option>
-
-                
-                
             </select>
                 
-            </select>
             <input type = "submit">
     </form>
     </body>
