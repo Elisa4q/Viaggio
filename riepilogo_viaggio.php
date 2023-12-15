@@ -14,16 +14,13 @@
              $Cognome= $_SESSION["Cognome"];
              $Tipo_viaggio  = $_SESSION["Tipo_viaggio"];
              $destinazione = $_SESSION["destinazione"] = ;
-
-
-
-             $budget= $_POST["budget"];
+            $budget= $_POST["budget"];
             $hotel = $_POST["hotel"];
-            $_POST["azienda"] = $azienda;
-            $_POST["durata_viaggio"] = $durata_viaggio;
-            $_POST["num_persone"] = $num_persone; 
-            $_POST["tipo_alloggio"] = $tipo_alloggio;
-            $_POST["attività"] = $attività; 
+            $azienda = $_POST["azienda"];
+            $durata_viaggio = $_POST["durata_viaggio"];
+            $num_persone = $_POST["num_persone"]; 
+            $tipo_alloggio = $_POST["tipo_alloggio"];
+            $attività = $_POST["attività"]; 
             
             ?>
     </body>
