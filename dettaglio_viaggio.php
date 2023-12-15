@@ -18,7 +18,7 @@
             $durata_viaggio = $_POST["durata_viaggio"];
             $num_persone = $_POST["num_persone"]; 
             $tipo_alloggio = $_POST["tipo_alloggio"];
-            $attività = $_SESSION["attività"];
+            $attività = $_POST["attività"];
 
             $_SESSION["Nome"] = $Nome; //session è un'array associativo
             $_SESSION["Cognome"] = $Cognome;
@@ -26,7 +26,7 @@
             $_SESSION["destinazione"] = $destinazione;
             $_SESSION["budget"] = $budget;
             $_SESSION["hotel"] = $hotel;
-            $_SESSION["azienda"] = azienda;
+            $_SESSION["azienda"] = $azienda;
             $_SESSION["durata_viaggio"] = $durata_viaggio;
             $_SESSION["num_persone"] = $num_persone; 
             $_SESSION["tipo_alloggio"] = $tipo_alloggio;
