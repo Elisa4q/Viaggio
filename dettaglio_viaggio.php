@@ -36,8 +36,8 @@
 
 
 
-        if($Tipo_viaggio == "L"){//Lavoro
-            print("Il tuo viaggio è per: lavoro");
+        if($Tipo_viaggio == "Lavoro"){//Lavoro
+            print("Il tuo viaggio è per: Lavoro");
            
         } else { //Vacanza
             print("Il tuo viaggio è per: vacanza");
@@ -45,10 +45,10 @@
 
         print("<form method = 'post' action = 'riepilogo_viaggio.php'>");
 
-        if($Tipo_viaggio == "L") { //lavoro
+        if($Tipo_viaggio == "Lavoro") { //lavoro
             
             
-            print("<input type = 'text' value = 'inserisci il nome dell'azienda' name = 'azienda'> <br><br>");
+            print("<input type = 'text' value = 'inserisci il nome azienda' name = 'azienda'> <br><br>");
 
             print("Scegli il budget: ");
             print("<select name  = 'budget'>");
@@ -59,11 +59,11 @@
             print("option value = 'tra 2.000 e 900'> tra 2.000 e 900</option>");
             print("<option value = 'tra 900 e 300'>tra 900 e 300</option>");
             print("<option value = 'inferiore a 300'>inferiore a 300</option>");
-            print("</select>")
+            print("</select>");
 
            
             print("scegli la durata del viaggio: ");
-            print("select name = durata");
+            print("<select name = durata>");
             print("<option value = '1 mese'> 1 mese</option>");
             print("<option value = '2 settimane'> 2 settimane</option>");
             print("<option value = '1 settimana'>1 settimana</option>");
@@ -71,7 +71,7 @@
             print("<option value = '4 giorni>4 giorni</option>");
             print("<option value = '3 giorni'>3 giorni</option>");
             print("<option value = '2 giorni'>2 giorni</option>");
-            print("/select");
+            print("</select>");
 
             
 
@@ -83,7 +83,7 @@
             print("<input type = 'text' value = 'inserisci attività' name = 'attività'> <br><br>");
 
             print("Scegli il tipo_alloggio: ");
-            print("select name = tipo_alloggio");
+            print("<select name = tipo_alloggio>");
             print("<option value = '5 stelle'>5 stelle</option>");
             print("<option value = '4 stelle'>4 stelle</option>");
             print("<option value = '3 stelle'>3 stelle</option>");
@@ -91,13 +91,14 @@
             print("<option value = '1 stella'>1 stella</option>");
             print("<option value = 'b&b'>b&b</option>");
             print("<option value = 'Appartamento'>Appartamento</option>");
-            print("/select");
+            print("</select>");
         };
 
-        </form>
+        
 
         ?>
 
       <input type = "submit">
+      </form>
     </body>
 </html>
