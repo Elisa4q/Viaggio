@@ -10,7 +10,7 @@
     $durata_viaggio = $_POST["durata_viaggio"];
     $num_persone = $_POST["num_persone"]; 
     $tipo_alloggio = $_POST["tipo_alloggio"];
-    $attività = $_SESSION["attività"];
+    $attività = $_POST["attività"];
 
     setcookie("Nome", $Nome, time()+60);
     setcookie("Cognome", $Cognome, time()+60);
@@ -35,15 +35,12 @@
         <?php
 
         if($Tipo_viaggio == "L"){//lavoro
-            print("Benvenuto $nome $cognome"); 
+            print("Benvenuto $Nome $Cognome"); 
         } else { //vacanza
-            print("Benvenuta $nome $cognome");
+            print("Benvenuta $Nome $Cognome");
         }
         
-        ?>
-
-
-if($Tipo_viaggio == "L") { //lavoro
+        if($Tipo_viaggio == "L") { //lavoro
             
             print("<form method = 'post' action = 'riepilogo_viaggio.php'>");
             print("<input type = 'text' value = 'inserisci il nome dell'azienda' name = 'azienda'> <br><br>");
@@ -87,6 +84,8 @@ if($Tipo_viaggio == "L") { //lavoro
             print("<option value = 'b&b'>b&b</option>");
             print("<option value = 'Appartamento'>Appartamento</option>");
 
-
+            
 
         };
+
+        ?>
