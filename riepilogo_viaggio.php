@@ -10,17 +10,20 @@
 
             session_start();
             
-            $_SESSION["Nome"] = $Nome; //session è un'array associativo
-            $_SESSION["Cognome"] = $Cognome;
-            $_SESSION["Tipo_viaggio"] = $Tipo_viaggio;
-            $_SESSION["destinazione"] = $destinazione;
-            $_SESSION["budget"] = $budget;
-            $_SESSION["hotel"] = $hotel;
-            $_SESSION["azienda"] = $azienda;
-            $_SESSION["durata_viaggio"] = $durata_viaggio;
-            $_SESSION["num_persone"] = $num_persone; 
-            $_SESSION["tipo_alloggio"] = $tipo_alloggio;
-            $_SESSION["attività"] = $attività;
+             $Nome = $_SESSION["Nome"]; //session è un'array associativo
+             $Cognome= $_SESSION["Cognome"];
+             $Tipo_viaggio  = $_SESSION["Tipo_viaggio"];
+             $destinazione = $_SESSION["destinazione"] = ;
+
+
+
+             $budget= $_POST["budget"];
+            $hotel = $_POST["hotel"];
+            $_POST["azienda"] = $azienda;
+            $_POST["durata_viaggio"] = $durata_viaggio;
+            $_POST["num_persone"] = $num_persone; 
+            $_POST["tipo_alloggio"] = $tipo_alloggio;
+            $_POST["attività"] = $attività; 
             
             ?>
     </body>
