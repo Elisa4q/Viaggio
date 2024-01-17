@@ -24,7 +24,7 @@
 
 
 if($tipo_viaggio == "lavoro"){
-print("Benvenuto $Nome $Cognome, siamo leiti di informarla che il suo viaggio è per $tipo_viaggio
+print("Benvenuto $Nome $Cognome, siamo lieti di informarla che il suo viaggio è per $tipo_viaggio
     la destinazione da lei selezionata è $destinazione
     la sua azienda è $azienda, lei ha un budget di $budget,
     il suo viaggio dura $durata_viaggio");
